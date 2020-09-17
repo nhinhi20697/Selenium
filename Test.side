@@ -1,0 +1,218 @@
+{
+  "id": "c6d34024-8678-4764-b2d9-4c953607d1e1",
+  "version": "2.0",
+  "name": "Test",
+  "url": "https://the-internet.herokuapp.com/",
+  "tests": [{
+    "id": "8a35fd5b-10a5-4545-b906-72f36f47725b",
+    "name": "Login valid",
+    "commands": [{
+      "id": "608d1a59-318d-46a9-bafb-df02709b7a4e",
+      "comment": "",
+      "command": "open",
+      "target": "https://the-internet.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cc7a6b8-afb7-4401-8760-2f0abb06ad1b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1088x738",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69b62c5b-126f-4910-bbb7-257a59e0646c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Form Authentication",
+      "targets": [
+        ["linkText=Form Authentication", "linkText"],
+        ["css=li:nth-child(21) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Form Authentication')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[21]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[21]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Form Authentication')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4953cea5-1d44-4255-8426-a9389c4901e5",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "361a2b07-c10c-4f86-987c-098e60e141da",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Nhi"
+    }, {
+      "id": "33f6e9f0-f8ee-46d3-9c73-22bc0c9b1511",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f73dd6c-5f36-4156-b0f9-ff8418813df8",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "200697"
+    }, {
+      "id": "30fb8059-a95a-4bf6-9da9-0134a7e6c2fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa",
+      "targets": [
+        ["css=.fa", "css:finder"],
+        ["xpath=//form[@id='login']/button/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,' Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f325f59-a640-4905-a6b9-c5012357c79c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=flash",
+      "targets": [
+        ["id=flash", "id"],
+        ["css=#flash", "css:finder"],
+        ["xpath=//div[@id='flash']", "xpath:attributes"],
+        ["xpath=//div[@id='flash-messages']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": "Your username is invalid!\\n×"
+    }]
+  }, {
+    "id": "54281e64-56d7-4e30-9fe9-c1a3a962a081",
+    "name": "Check if else",
+    "commands": [{
+      "id": "52fa3a48-2356-4230-a3ac-a93e104acdbc",
+      "comment": "",
+      "command": "open",
+      "target": "/entry_ad",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b372094c-fa6c-4cd0-ad1f-83303724802a",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "1000\\n"
+    }, {
+      "id": "14f21273-bb6e-4f1b-ace6-8d22e4b90321",
+      "comment": "",
+      "command": "if",
+      "target": "document.querySelector('#modal') && document.querySelector('#modal').offsetHeight!==0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43b91ba4-c191-4896-acb3-84818f2254a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-footer > p",
+      "targets": [
+        ["css=.modal-footer > p", "css:finder"],
+        ["xpath=//div[@id='modal']/div[2]/div[3]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Close')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d1e256e-5fc7-4a20-97b9-054f7364c187",
+      "comment": "",
+      "command": "waitForElementNotVisible",
+      "target": "css=.modal",
+      "targets": [
+        ["css=.ytp-fullscreen-button", "css:finder"],
+        ["xpath=//div[@id='player_uid_479293853_1']/div[30]/div[2]/div[2]/button[7]", "xpath:idRelative"],
+        ["xpath=//button[7]", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "dd5135f3-1a13-4901-a6d7-c2567424b7ef",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a09c7ac-1979-4d24-888a-f9bef9a6fcf3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Elemental Selenium",
+      "targets": [
+        ["linkText=Elemental Selenium", "linkText"],
+        ["css=.large-4 a", "css:finder"],
+        ["xpath=//a[contains(text(),'Elemental Selenium')]", "xpath:link"],
+        ["xpath=//div[@id='page-footer']/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://elementalselenium.com/']", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Elemental Selenium')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8404",
+      "windowTimeout": 2000
+    }, {
+      "id": "85f3223f-23c2-4f99-8e29-a53f8a7b00c1",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8404}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7d43eed-5119-4c88-8221-e4446990404d",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Elemental Selenium: Receive a Free, Weekly Tip on Using Selenium like a Pro",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cc390307-fe41-4ff8-b9fb-0853a31afc8b",
+    "name": "17/09/2020",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://app.monocleanalytics.vue.local/", "https://test.monocleanalytics.com/home", "https://the-internet.herokuapp.com/"],
+  "plugins": []
+}
