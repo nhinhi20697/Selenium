@@ -128,6 +128,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "34bedd1f-91db-4b27-bb5f-328f262f2f7e",
+      "comment": "Set width & height windown screen.",
+      "command": "setWindowSize",
+      "target": "1000x1000",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "b372094c-fa6c-4cd0-ad1f-83303724802a",
       "comment": "",
       "command": "pause",
